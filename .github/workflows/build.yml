@@ -7,7 +7,7 @@ on:
       - master
 
 env: # Change this if needed
-  Rmarkdown-file: template-computo-Rmarkdown.Rmd
+  Rmarkdown-file: post-hoc_diff-expr.Rmd
 
 jobs:
   build_computorticle:
