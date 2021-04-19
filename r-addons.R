@@ -18,5 +18,7 @@ install.packages("pagedown")
 
 ## ____________________________________________________
 ## Additional R packages needed by the user
-## remotes::install_github("")
+remotes::install_github("pneuvial/sanssouci@develop")
+remotes::install_github("pneuvial/sanssouci.data")
+
 ## ____________________________________________________
