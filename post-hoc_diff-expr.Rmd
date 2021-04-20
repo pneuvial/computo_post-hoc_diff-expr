@@ -201,7 +201,7 @@ As discussed in @blanchard20post-hoc, the Simes bound has two major limitations,
 
 To bypass these limitations, @blanchard20post-hoc have proposed a randomization-based procedure known as $\lambda$-calibration, which yields tighter bounds that are adapted to the dependency observed in the data set at hand^[A closely related approach has been proposed by @HSG2019]. In the case of two-sample tests, this calibration can be achieved by permutation of class labels:
 
-```{r calibration, cache=TRUE}
+```{r calibration}
 B <- 1000
 res <- fit(obj, B = B, alpha = alpha, family = "Simes")
 ```
@@ -209,7 +209,7 @@ res <- fit(obj, B = B, alpha = alpha, family = "Simes")
 
 An alternative to the Simes/Linear reference family is the Beta reference family:
 
-```{r calibration-beta, cache=TRUE}
+```{r calibration-beta}
 K <- 50
 res_Beta <- fit(res, B = B, alpha = alpha, family = "Beta", K = K)
 ```
